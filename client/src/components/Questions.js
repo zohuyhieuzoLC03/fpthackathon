@@ -66,10 +66,18 @@ const Questions = ({isLoggedIn}) => {
     formData.append('file', file);
 
     setIsUploading(true);
+    let response
     try {
-      const response = await axios.post('http://localhost:3001/api/upload_image', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
-      });
+      if (file.type.includes('image/')) {
+          response = await axios.post('http://localhost:3001/api/upload_image', formData, {
+          headers: { 'Content-Type': 'multipart/form-data' },
+        });
+      }
+      else {
+          response = await axios.post('http://localhost:3001/api/upload_sound', formData, {
+          headers: { 'Content-Type': 'multipart/form-data' },
+        });
+      }
 
       // Đặt kết quả của API upload file vào biến state "text"
       setText(response.data);
@@ -114,7 +122,7 @@ const Questions = ({isLoggedIn}) => {
             {/* Thêm thẻ input type="file" ẩn đi, dùng để xử lý việc chọn file */}
             <input
               type="file"
-              accept=".png, .jpg, .jpeg"
+              accept=".png, .jpg, .jpeg, .mp3, .wav"
               ref={fileInputRef}
               onChange={handleSelectedFile}
               style={{ display: 'none' }}

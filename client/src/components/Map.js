@@ -17,7 +17,6 @@ const Map = ({isLoggedIn}) => {
   const [isLoading, setIsLoading] = useState(false);
   const [text, setText] = useState("");
   const [isUploading, setIsUploading] = useState(false);
-  const [isUploadingSound, setIsUploadingSound] = useState(false)
   const [showModal, setShowModal] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [currentMap, setCurrentMap] = useState("");
