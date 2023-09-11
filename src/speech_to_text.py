@@ -47,8 +47,9 @@ def convert_speech_file_to_text(file_path: str):
 file_path = 'sound/upload_sound.mp3'
 if file_path is not None and os.path.exists(file_path) and os.path.isfile(file_path):
     text = convert_speech_file_to_text(file_path)
-    sys.stdout.write(json.dumps(text))
+    # print(type(text))
     # print(text)
+    sys.stdout.write(json.dumps(text))
     os.remove(file_path)
 else:
     pass
