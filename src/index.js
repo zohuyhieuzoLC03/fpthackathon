@@ -12,7 +12,7 @@ const pythonScriptSummary = path.join(__dirname, 'summarize.py');
 const pythonScriptChatbot = path.join(__dirname, 'chatbot.py');
 const pythonScriptImageV = path.join(__dirname, 'image_to_text_vie.py');
 const pythonScriptDailyQuiz = path.join(__dirname, 'daily_quiz.py')
-const pythonScriptSoundV = path.join(__dirname, 'sound_to_text_vie.py');
+const pythonScriptSoundV = path.join(__dirname, 'speech_to_text.py');
 
 // Hàm chạy script Python và trả về kết quả thông qua Promise
 const runPythonScript = (pythonScript, args) => {
