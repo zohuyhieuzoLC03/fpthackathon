@@ -1,0 +1,158 @@
+{
+    "001": {
+        "_key": "001",
+        "name": "Nội dung chính",
+        "father": "",
+        "sortList": ["002", "003"]
+    },
+    "002": {
+        "_key": "002",
+        "name": "Nhân vật ông Sáu",
+        "father": "001",
+        "sortList": ["004", "009"]
+    },
+    "003": {
+        "_key": "003",
+        "name": "Nhân vật bé Thu",
+        "father": "001",
+        "sortList": ["014", "019"]
+    },
+    "004": {
+        "_key": "004",
+        "name": "Những ngày ở quê",
+        "father": "002",
+        "sortList": ["005", "006", "007", "008"]
+    },
+    "005": {
+        "_key": "005",
+        "name": "Khao khát gặp con",
+        "father": "004",
+        "sortList": []
+    },
+    "006": {
+        "_key": "006",
+        "name": "Đau khổ khi con không nhận mình",
+        "father": "004",
+        "sortList": []
+    },
+    "007": {
+        "_key": "007",
+        "name": "Lỡ tay đánh con",
+        "father": "004",
+        "sortList": []
+    },
+    "008": {
+        "_key": "008",
+        "name": "Giờ phút chia tay đầy xúc động",
+        "father": "004",
+        "sortList": []
+    },
+    "009": {
+        "_key": "009",
+        "name": "Ở khu căn cứ",
+        "father": "002",
+        "sortList": ["010", "011"]
+    },
+    "010": {
+        "_key": "010",
+        "name": "Tìm ngà voi làm lược tặng con",
+        "father": "009",
+        "sortList": []
+    },
+    "011": {
+        "_key": "011",
+        "name": "Lúc hi sinh",
+        "father": "009",
+        "sortList": ["012", "013"]
+    },
+    "012": {
+        "_key": "012",
+        "name": "Nhớ con",
+        "father": "011",
+        "sortList": []
+    },
+    "013": {
+        "_key": "013",
+        "name": "Nhờ bác Ba gửi lại cây lược cho bé Thu",
+        "father": "011",
+        "sortList": []
+    },
+    "014": {
+        "_key": "014",
+        "name": "Bướng bỉnh, ương ngạnh",
+        "father": "003",
+        "sortList": []
+    },
+    "015": {
+        "_key": "015",
+        "name": "Nói trổng",
+        "father": "014",
+        "sortList": []
+    },
+    "016": {
+        "_key": "016",
+        "name": "Không gọi ba",
+        "father": "014",
+        "sortList": []
+    },
+    "017": {
+        "_key": "017",
+        "name": "Hất trứng cá",
+        "father": "014",
+        "sortList": []
+    },
+    "018": {
+        "_key": "018",
+        "name": "Bỏ sang bà ngoại",
+        "father": "014",
+        "sortList": []
+    },
+    "019": {
+        "_key": "019",
+        "name": "Yêu thương cha tha thiết",
+        "father": "003",
+        "sortList": ["020", "023"]
+    },
+    "020": {
+        "_key": "020",
+        "name": "Hiểu vết thẹo trên má ông Sáu",
+        "father": "019",
+        "sortList": ["021", "022"]
+    },
+    "021": {
+        "_key": "021",
+        "name": "Lăn lộn suốt đêm",
+        "father": "020",
+        "sortList": []
+    },
+    "022": {
+        "_key": "023",
+        "name": "Căm thù giặc",
+        "father": "020",
+        "sortList": []
+    },
+    "023": {
+        "_key": "023",
+        "name": "Cuộc chia tay cảm động",
+        "father": "019",
+        "sortList": ["024", "025", "026"]
+    },
+    "024": {
+        "_key": "024",
+        "name": "Gọi ba",
+        "father": "023",
+        "sortList": []
+    },
+    "025": {
+        "_key": "025",
+        "name": "Ôm hôn ba",
+        "father": "023",
+        "sortList": []
+    },
+    "026": {
+        "_key": "026",
+        "name": "Không cho ba đi",
+        "father": "023",
+        "sortList": []
+    }
+}

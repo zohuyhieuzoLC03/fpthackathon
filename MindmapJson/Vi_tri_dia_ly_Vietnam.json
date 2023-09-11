@@ -1,0 +1,188 @@
+{
+    "001": {
+        "_key": "001",
+        "name": "Vị trí địa lý",
+        "father": "",
+        "sortList": ["002", "003", "004", "005"]
+    },
+    "002": {
+        "_key": "002",
+        "name": "Phạm vi lãnh thổ",
+        "father": "001",
+        "sortList": ["006", "009", "013"]
+    },
+    "003": {
+        "_key": "003",
+        "name": "Đặc điểm",
+        "father": "001",
+        "sortList": ["014", "015", "016", "017", "018", "019"]
+    },
+    "004": {
+        "_key": "004",
+        "name": "Tiếp giáp",
+        "father": "001",
+        "sortList": ["020", "021", "022", "023", "024"]
+    },
+    "005": {
+        "_key": "005",
+        "name": "Ý nghĩa",
+        "father": "001",
+        "sortList": ["025", "029"]
+    },
+    "006": {
+        "_key": "006",
+        "name": "Vùng đất",
+        "father": "002",
+        "sortList": ["007", "008"]
+    },
+    "007": {
+        "_key": "007",
+        "name": "Toàn bộ phần đất liền",
+        "father": "006",
+        "sortList": []
+    },
+    "008": {
+        "_key": "008",
+        "name": "Diện tích: 331212 km2",
+        "father": "006",
+        "sortList": []
+    },
+    "009": {
+        "_key": "009",
+        "name": "Vùng biển",
+        "father": "002",
+        "sortList": ["010", "011", "012"]
+    },
+    "010": {
+        "_key": "010",
+        "name": "Diện tích trên biển Đông và thềm lục địa",
+        "father": "009",
+        "sortList": []
+    },
+    "011": {
+        "_key": "011",
+        "name": "Diện tích khoảng 1km2",
+        "father": "009",
+        "sortList": []
+    },
+    "012": {
+        "_key": "012",
+        "name": "Giàu tài nguyên",
+        "father": "009",
+        "sortList": []
+    },
+    "013": {
+        "_key": "013",
+        "name": "Vùng trời",
+        "father": "002",
+        "sortList": []
+    },
+    "014": {
+        "_key": "014",
+        "name": "Nằm ở bán đảo Đông Dương",
+        "father": "003",
+        "sortList": []
+    },
+    "015": {
+        "_key": "015",
+        "name": "Trung tâm của Đông Nam Á",
+        "father": "003",
+        "sortList": []
+    },
+    "016": {
+        "_key": "016",
+        "name": "Tiếp giáp 2 vành đai sinh khoảng lớn",
+        "father": "003",
+        "sortList": []
+    },
+    "017": {
+        "_key": "017",
+        "name": "Tiếp xúc của nhiều dân tộc",
+        "father": "003",
+        "sortList": []
+    },
+    "018": {
+        "_key": "018",
+        "name": "Giao thao nhiều luồng động thực vật",
+        "father": "003",
+        "sortList": []
+    },
+    "019": {
+        "_key": "019",
+        "name": "Nằm trọn trong múi giờ số 7",
+        "father": "003",
+        "sortList": []
+    },
+    "020": {
+        "_key": "020",
+        "name": "Biển Đông",
+        "father": "004",
+        "sortList": []
+    },
+    "021": {
+        "_key": "021",
+        "name": "Trung Quốc",
+        "father": "004",
+        "sortList": []
+    },
+    "022": {
+        "_key": "022",
+        "name": "Lào",
+        "father": "004",
+        "sortList": []
+    },
+    "023": {
+        "_key": "023",
+        "name": "Campuchia",
+        "father": "004",
+        "sortList": []
+    },
+    "024": {
+        "_key": "024",
+        "name": "Vịnh Thái Lan",
+        "father": "004",
+        "sortList": []
+    },
+    "025": {
+        "_key": "025",
+        "name": "Thuận lợi",
+        "father": "005",
+        "sortList": ["026", "027", "028"]
+    },
+    "026": {
+        "_key": "026",
+        "name": "Tự nhiên",
+        "father": "025",
+        "sortList": []
+    },
+    "027": {
+        "_key": "027",
+        "name": "Phát triển kinh tế, xã hội",
+        "father": "025",
+        "sortList": []
+    },
+    "028": {
+        "_key": "028",
+        "name": "An ninh quốc phòng",
+        "father": "025",
+        "sortList": []
+    },
+    "029": {
+        "_key": "029",
+        "name": "Hạn chế",
+        "father": "005",
+        "sortList": ["030", "031"]
+    },
+    "030": {
+        "_key": "030",
+        "name": "Hứng chịu thiên tai",
+        "father": "029",
+        "sortList": []
+    },
+    "031": {
+        "_key": "031",
+        "name": "Hứng chịu các cuộc xâm lược",
+        "father": "029",
+        "sortList": []
+    }
+}

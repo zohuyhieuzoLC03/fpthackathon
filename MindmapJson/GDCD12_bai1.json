@@ -1,0 +1,122 @@
+{
+    "001": {
+        "_key": "001",
+        "name": "Pháp luật và đời sống",
+        "father": "",
+        "sortList": ["002", "003", "004", "005"]
+    },
+    "002": {
+        "_key": "002",
+        "name": "Khái niệm",
+        "father": "001",
+        "sortList": ["006", "009"]
+    },
+    "003": {
+        "_key": "003",
+        "name": "Bản chất",
+        "father": "001",
+        "sortList": ["013", "014"]
+    },
+    "004": {
+        "_key": "004",
+        "name": "Mối quan hệ với đạo đức",
+        "father": "001",
+        "sortList": ["017", "018"]
+    },
+    "005": {
+        "_key": "005",
+        "name": "Vai trò",
+        "father": "001",
+        "sortList": ["019", "020"]
+    },
+    "006": {
+        "_key": "006",
+        "name": "Là hệ thống các quy tắc xử sự chung",
+        "father": "002",
+        "sortList": ["007", "008"]
+    },
+    "007": {
+        "_key": "007",
+        "name": "Nhà nước ban hành",
+        "father": "006",
+        "sortList": []
+    },
+    "008": {
+        "_key": "008",
+        "name": "Đảm bảo thực hiện quyền lực nhà nước",
+        "father": "006",
+        "sortList": []
+    },
+    "009": {
+        "_key": "009",
+        "name": "Đặc trưng",
+        "father": "002",
+        "sortList": ["010", "011", "012"]
+    },
+    "010": {
+        "_key": "010",
+        "name": "Tính xác định chặt chẽ và mặt hình thức",
+        "father": "009",
+        "sortList": []
+    },
+    "011": {
+        "_key": "011",
+        "name": "Tính quyền lực bắt buộc chung",
+        "father": "009",
+        "sortList": []
+    },
+    "012": {
+        "_key": "012",
+        "name": "Tính quy phạm phổ biến",
+        "father": "009",
+        "sortList": []
+    },
+    "013": {
+        "_key": "013",
+        "name": "Bản chất giai cấp",
+        "father": "003",
+        "sortList": []
+    },
+    "014": {
+        "_key": "014",
+        "name": "Bản chất xã hội",
+        "father": "003",
+        "sortList": ["015", "016"]
+    },
+    "015": {
+        "_key": "015",
+        "name": "Bắt nguồn từ thực tiễn",
+        "father": "014",
+        "sortList": []
+    },
+    "016": {
+        "_key": "016",
+        "name": "Thực hiện trong thực tiễn",
+        "father": "014",
+        "sortList": []
+    },
+    "017": {
+        "_key": "017",
+        "name": "Thể hiện các quan niệm, giá trị được bảo vệ",
+        "father": "004",
+        "sortList": []
+    },
+    "018": {
+        "_key": "018",
+        "name": "Hướng dẫn và điều chỉnh hành vi con người",
+        "father": "004",
+        "sortList": []
+    },
+    "019": {
+        "_key": "019",
+        "name": "Là phương tiện để Nhà nước quản lý xã hội",
+        "father": "005",
+        "sortList": []
+    },
+    "020": {
+        "_key": "020",
+        "name": "Là phương tiện để công dân thực hiện và bảo vệ quyền và lợi ích hợp pháp",
+        "father": "005",
+        "sortList": []
+    }
+}

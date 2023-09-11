@@ -1,0 +1,104 @@
+{
+    "001": {
+        "_key": "001",
+        "name": "Thiên nhiên phân hóa đa dạng",
+        "father": "",
+        "sortList": ["002", "003", "004", "005"]
+    },
+    "002": {
+        "_key": "002",
+        "name": "Phân hóa theo Bắc-Nam",
+        "father": "001",
+        "sortList": ["006", "007"]
+    },
+    "003": {
+        "_key": "003",
+        "name": "Phân hóa theo Đông-Tây",
+        "father": "001",
+        "sortList": ["008"]
+    },
+    "004": {
+        "_key": "004",
+        "name": "Phân hóa theo độ cao",
+        "father": "001",
+        "sortList": ["012", "013", "014"]
+    },
+    "005": {
+        "_key": "005",
+        "name": "Các miền địa lý tự nhiên",
+        "father": "001",
+        "sortList": ["015", "016", "017"]
+    },
+    "006": {
+        "_key": "006",
+        "name": "Phần lãnh thổ phía Bắc(từ dãy Bạch Mã trở ra)",
+        "father": "002",
+        "sortList": []
+    },
+    "007": {
+        "_key": "007",
+        "name": "Phần lãnh thổ phía Nam(từ dãy Bạch Mã trở vào)",
+        "father": "002",
+        "sortList": []
+    },
+    "008": {
+        "_key": "008",
+        "name": "3 dải rõ rệt",
+        "father": "003",
+        "sortList": ["009", "010", "011"]
+    },
+    "009": {
+        "_key": "009",
+        "name": "Vùng biển và thềm lục địa",
+        "father": "008",
+        "sortList": []
+    },
+    "010": {
+        "_key": "010",
+        "name": "Vùng đồng bằng ven biển",
+        "father": "008",
+        "sortList": []
+    },
+    "011": {
+        "_key": "011",
+        "name": "Vùng đồi núi",
+        "father": "008",
+        "sortList": []
+    },
+    "012": {
+        "_key": "012",
+        "name": "Đai nhiệt đới gió mùa",
+        "father": "004",
+        "sortList": []
+    },
+    "013": {
+        "_key": "013",
+        "name": "Đai cận nhiệt đới gió mùa",
+        "father": "004",
+        "sortList": []
+    },
+    "014": {
+        "_key": "014",
+        "name": "Đai cận nhiệt đới gió mùa trên núi",
+        "father": "004",
+        "sortList": []
+    },
+    "015": {
+        "_key": "015",
+        "name": "Miền Bắc và Đông Bắc Bắc Bộ",
+        "father": "005",
+        "sortList": []
+    },
+    "016": {
+        "_key": "016",
+        "name": "Miền Tây Bắc và Bắc Trung Bộ",
+        "father": "005",
+        "sortList": []
+    },
+    "017": {
+        "_key": "017",
+        "name": "Miền Nam Trung Bộ và Nam Bộ",
+        "father": "005",
+        "sortList": []
+    }
+}

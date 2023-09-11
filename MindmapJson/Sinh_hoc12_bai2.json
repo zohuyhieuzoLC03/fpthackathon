@@ -1,0 +1,182 @@
+{
+    "001": {
+        "_key": "001",
+        "name": "Sự hấp thụ nước và muối khoáng ở rễ",
+        "father": "",
+        "sortList": ["002", "003", "004", "005"]
+    },
+    "002": {
+        "_key": "002",
+        "name": "Nước",
+        "father": "001",
+        "sortList": ["006", "007"]
+    },
+    "003": {
+        "_key": "003",
+        "name": "Rễ",
+        "father": "001",
+        "sortList": ["008", "011"]
+    },
+    "004": {
+        "_key": "004",
+        "name": "Cơ chế hấp thụ",
+        "father": "001",
+        "sortList": ["015", "025"]
+    },
+    "005": {
+        "_key": "005",
+        "name": "Các tác nhân môi trường",
+        "father": "001",
+        "sortList": ["028", "029", "030"]
+    },
+    "006": {
+        "_key": "006",
+        "name": "Là dung môi",
+        "father": "002",
+        "sortList": []
+    },
+    "007": {
+        "_key": "007",
+        "name": "Gắn với quá trình hấp thụ muối khoáng",
+        "father": "002",
+        "sortList": []
+    },
+    "008": {
+        "_key": "008",
+        "name": "Hình thái",
+        "father": "003",
+        "sortList": ["009", "010"]
+    },
+    "009": {
+        "_key": "009",
+        "name": "Miền sinh trưởng giúp rễ cây dài ra",
+        "father": "008",
+        "sortList": []
+    },
+    "010": {
+        "_key": "010",
+        "name": "Miền lông hút chứa nhiều lông hút",
+        "father": "008",
+        "sortList": []
+    },
+    "011": {
+        "_key": "011",
+        "name": "Phát triển bề mặt hấp thụ",
+        "father": "003",
+        "sortList": ["012", "013", "014"]
+    },
+    "012": {
+        "_key": "012",
+        "name": "Sinh trưởng nhanh về chiều sâu",
+        "father": "011",
+        "sortList": []
+    },
+    "013": {
+        "_key": "013",
+        "name": "Phân nhánh về chiều rộng",
+        "father": "011",
+        "sortList": []
+    },
+    "014": {
+        "_key": "014",
+        "name": "Tăng nhanh số lượng lông hút",
+        "father": "011",
+        "sortList": []
+    },
+    "015": {
+        "_key": "015",
+        "name": "Hấp thụ vào tế bào lông hút",
+        "father": "004",
+        "sortList": ["016", "021"]
+    },
+    "016": {
+        "_key": "016",
+        "name": "Hấp thụ nước",
+        "father": "015",
+        "sortList": ["017", "018"]
+    },
+    "017": {
+        "_key": "017",
+        "name": "Theo cơ chế thụ động",
+        "father": "016",
+        "sortList": []
+    },
+    "018": {
+        "_key": "018",
+        "name": "Nguyên nhân",
+        "father": "016",
+        "sortList": ["019", "020"]
+    },
+    "019": {
+        "_key": "019",
+        "name": "Thoát hơi nước ở lá",
+        "father": "016",
+        "sortList": []
+    },
+    "020": {
+        "_key": "020",
+        "name": "Nồng độ các chất tan cao",
+        "father": "016",
+        "sortList": []
+    },
+    "021": {
+        "_key": "021",
+        "name": "Hấp thụ ion khoáng",
+        "father": "015",
+        "sortList": ["022", "023"]
+    },
+    "022": {
+        "_key": "022",
+        "name": "Cơ chế thụ động",
+        "father": "021",
+        "sortList": []
+    },
+    "023": {
+        "_key": "023",
+        "name": "Cơ chế chủ động",
+        "father": "021",
+        "sortList": []
+    },
+    "024": {
+        "_key": "024",
+        "name": "Thoát hơi nước ở lá",
+        "father": "016",
+        "sortList": []
+    },
+    "025": {
+        "_key": "025",
+        "name": "Đi từ đất vào mạch gỗ của rễ",
+        "father": "004",
+        "sortList": ["026", "027"]
+    },
+    "026": {
+        "_key": "026",
+        "name": "Con đường gian bào",
+        "father": "025",
+        "sortList": []
+    },
+    "027": {
+        "_key": "027",
+        "name": "Con đường tế bào chất",
+        "father": "025",
+        "sortList": []
+    },
+    "028": {
+        "_key": "028",
+        "name": "Áp suất thẩm thấu",
+        "father": "005",
+        "sortList": []
+    },
+    "029": {
+        "_key": "029",
+        "name": "pH",
+        "father": "005",
+        "sortList": []
+    },
+    "030": {
+        "_key": "030",
+        "name": "Độ thoáng",
+        "father": "005",
+        "sortList": []
+    }
+}

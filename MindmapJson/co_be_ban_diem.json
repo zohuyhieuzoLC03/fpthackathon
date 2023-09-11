@@ -1,0 +1,141 @@
+{
+    "001": {
+        "_key": "001",
+        "name": "Nội dung chính",
+        "father": "",
+        "sortList": ["002", "003", "004", "005"]
+    },
+    "002": {
+        "_key": "002",
+        "name": "Gia cảnh",
+        "father": "001",
+        "sortList": ["006", "007", "008", "009"]
+    },
+    "003": {
+        "_key": "003",
+        "name": "Lúc đi bán diêm",
+        "father": "001",
+        "sortList": ["010", "011", "012", "013"]
+    },
+    "004": {
+        "_key": "004",
+        "name": "Hiện thực (phũ phàng)",
+        "father": "001",
+        "sortList": ["014", "015", "016", "017", "018"]
+    },
+    "005": {
+        "_key": "005",
+        "name": "Những mộng tưởng (Đẹp đẽ)",
+        "father": "001",
+        "sortList": ["019", "020", "021", "022", "023"]
+    },
+    "006": {
+        "_key": "006",
+        "name": "Mồ côi mẹ",
+        "father": "002",
+        "sortList": []
+    },
+    "007": {
+        "_key": "007",
+        "name": "Bố qua đời",
+        "father": "002",
+        "sortList": []
+    },
+    "008": {
+        "_key": "008",
+        "name": "Bố hay la mắng",
+        "father": "002",
+        "sortList": []
+    },
+    "009": {
+        "_key": "009",
+        "name": "Nghèo, đi bán diêm",
+        "father": "002",
+        "sortList": []
+    },
+    "010": {
+        "_key": "010",
+        "name": "Đêm giao thừa",
+        "father": "003",
+        "sortList": []
+    },
+    "011": {
+        "_key": "011",
+        "name": "Trời đông, bụng đói",
+        "father": "003",
+        "sortList": []
+    },
+    "012": {
+        "_key": "012",
+        "name": "Đầu trần chân đất",
+        "father": "003",
+        "sortList": []
+    },
+    "013": {
+        "_key": "013",
+        "name": "Phố: sực nức mùi ngỗng quay",
+        "father": "003",
+        "sortList": []
+    },
+    "014": {
+        "_key": "014",
+        "name": "Diêm tắt, sợ cha mắng",
+        "father": "004",
+        "sortList": []
+    },
+    "015": {
+        "_key": "015",
+        "name": "Bức tường dày lạnh",
+        "father": "004",
+        "sortList": []
+    },
+    "016": {
+        "_key": "016",
+        "name": "Ngọn nến bay thành sao trên trời",
+        "father": "004",
+        "sortList": []
+    },
+    "017": {
+        "_key": "017",
+        "name": "Ảo ảnh biến mất",
+        "father": "004",
+        "sortList": []
+    },
+    "018": {
+        "_key": "018",
+        "name": "Chết vì đói và rét",
+        "father": "004",
+        "sortList": []
+    },
+    "019": {
+        "_key": "019",
+        "name": "Có lò sưởi",
+        "father": "005",
+        "sortList": []
+    },
+    "020": {
+        "_key": "020",
+        "name": "Có bàn ăn, ngỗng quay",
+        "father": "005",
+        "sortList": []
+    },
+    "021": {
+        "_key": "021",
+        "name": "Có cây thông nô-en",
+        "father": "005",
+        "sortList": []
+    },
+    "022": {
+        "_key": "022",
+        "name": "Có bà âu yếm",
+        "father": "005",
+        "sortList": []
+    },
+    "023": {
+        "_key": "023",
+        "name": "Hai bà cháu bay lên trời",
+        "father": "005",
+        "sortList": []
+    }
+}
+
