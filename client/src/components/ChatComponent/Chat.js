@@ -46,18 +46,18 @@ const Chat = () => {
   };
 
   return (
-    <Flex w="100%" h="screen" justify="center">
-      <Flex w={["100%", "100%", "40%"]} h="90%" flexDir="column">
-        <Divider />
+    <Flex position="absolute" bottom="4" top="0" w="100%" h="100%" justify="center">
+    <Flex w={["100%", "100%", "50%"]} flexDir="column">
+      <Divider />
         <Messages messages={messages} />
-        <Divider />
-        <Footer
-          inputMessage={inputMessage}
-          setInputMessage={setInputMessage}
-          handleSendMessage={handleSendMessage}
-        />
-      </Flex>
+      <Divider />
+      <Footer
+        inputMessage={inputMessage}
+        setInputMessage={setInputMessage}
+        handleSendMessage={handleSendMessage}
+      />
     </Flex>
+  </Flex>
   );
 };
 

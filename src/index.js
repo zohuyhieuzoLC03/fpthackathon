@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const mysql = require('mysql')
 const { spawn } = require('child_process');
 const path = require('path');
 const multer = require('multer');
@@ -8,6 +7,7 @@ const multer = require('multer');
 // Khai báo đường dẫn tới các file script Python
 const pythonScriptNode = path.join(__dirname, 'node.py');
 const pythonScriptQuiz = path.join(__dirname, 'quiz.py');
+const pythonScriptQuiz_TF = path.join(__dirname, 'quiz_TF.py');
 const pythonScriptSummary = path.join(__dirname, 'summarize.py');
 const pythonScriptChatbot = path.join(__dirname, 'chatbot.py');
 const pythonScriptImageV = path.join(__dirname, 'image_to_text_vie.py');
@@ -69,6 +69,17 @@ app.post('/api/quizzes', async (req, res) => {
     const { text } = req.body;
     const quizzes = await runPythonScript(pythonScriptQuiz, [text]);
     res.json(quizzes);
+  } catch (error) {
+    console.log(error)
+    res.status(500).json({ error });
+  }
+});
+
+app.post('/api/quizzes_TF', async (req, res) => {
+  try {
+    const { text } = req.body;
+    const quizzes_TF = await runPythonScript(pythonScriptQuiz_TF, [text]);
+    res.json(quizzes_TF);
   } catch (error) {
     console.log(error)
     res.status(500).json({ error });
