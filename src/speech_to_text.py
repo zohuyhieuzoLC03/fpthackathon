@@ -27,7 +27,7 @@ def slice_audio(file_path):
 
     duration = audio_info.duration
     audio, samplerate = sf.read(file_path)
-    print(audio.shape)
+    # print(audio.shape)
     start = 0
     list_audio = []
     count = 0
@@ -41,10 +41,10 @@ def slice_audio(file_path):
             duration -= TIME_MAX
             count += 1
         if duration >= 1:
-            print(duration)
+            # print(duration)
             sub_audio = audio[start:]
-            print(sub_audio.shape)
-            print(count)
+            # print(sub_audio.shape)
+            # print(count)
             sub_audio_path = file_path[:-4] + str(count) + file_path[-4:]
             list_audio.append(sub_audio_path)
             sf.write(sub_audio_path, sub_audio, samplerate)
@@ -77,14 +77,14 @@ def convert_speech_file_to_text(file_path: str):
     s = requests.Session()
     files = {'file': open(file_path,'rb')}
     response = requests.post(url,files=files, headers=headers)
-    print(response)
+    # print(response)
     if response is not None:
         text = convert_response_to_text(response)
     else:
         text = ''
     return text
 
-file_path = 'sound/eng_sound.mp3'
+file_path = 'sound/upload_sound.mp3'
 if file_path is not None and os.path.exists(file_path) and os.path.isfile(file_path):
     list_audio = slice_audio(file_path)
     text = ''
