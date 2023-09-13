@@ -1,0 +1,6 @@
+claude_api==1.0.17
+numpy==1.25.0
+Pillow==10.0.0
+pytesseract==0.3.10
+Requests==2.31.0
+soundfile==0.12.1
