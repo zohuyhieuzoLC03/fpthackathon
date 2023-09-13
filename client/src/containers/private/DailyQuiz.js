@@ -63,7 +63,7 @@ const DailyQuiz = () => {
           ) : (
             <>
               <div className='w-full relative'>
-                <div className='mb-20'>
+                <div className='mb-10'>
                   <span className='text-4xl font-bold'>
                     Question {currentQuestion + 1}/{dailyQuiz.length}
                   </span>

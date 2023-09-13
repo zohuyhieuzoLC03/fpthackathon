@@ -12,10 +12,10 @@ const activeStyle = 'py-3 px-4 flex items-center justify-start text-base font-se
 const SidebarLeft = ({ showLibrary }) => {
   const navigate = useNavigate();
   return (
-    <div className='flex flex-col border-r-2 h-screen'>
+    <div className='flex flex-col h-screen shadow-xl'>
         <div onClick={() => navigate(path.HOME)} className='w-full h-[70px] py-[15px] px-[30px] flex justify-start items-center cursor-pointer'>
         </div>
-        <div className='flex flex-col'> 
+        <div className='flex flex-col mt-4'> 
         {showLibrary ? <SidebarMenu isLoggedIn/> : <SidebarMenu isLoggedIn={false}/>}
             {showLibrary ? (
               <div>

@@ -165,7 +165,7 @@ const getRankingOfAllUsers = async () => {
     });
     ranking.sort((a, b) => b.score - a.score);
     ranking = ranking.slice(0, 10);
-    console.log(ranking);
+    // console.log(ranking);
     return ranking;
   } catch (error) {
     console.error("Error getting document: ", error);

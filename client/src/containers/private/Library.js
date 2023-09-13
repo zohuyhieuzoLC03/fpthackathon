@@ -22,7 +22,7 @@ const Library = () => {
       if(isPublic === true) {
         data = await getDataFromFirestoreByFilters(undefined, isPublic, tag, undefined, undefined, undefined, dbname);
       }
-      console.log(data)
+      // console.log(data)
       setMapData(data);
     };
     fetchData();
