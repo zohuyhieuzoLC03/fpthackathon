@@ -2,8 +2,6 @@ import requests
 import json
 import os
 import sys
-import soundfile as sf
-import numpy as np
 
 def get_sound_file_from_folder():
     '''
@@ -52,7 +50,6 @@ def slice_audio(file_path):
     else:
         list_audio.append(file_path)
     return list_audio
-
 def convert_response_to_text(response):
     response = json.loads(response.text)
 
@@ -60,9 +57,7 @@ def convert_response_to_text(response):
     for segment in response:
         text += segment['result']['hypotheses'][0]['transcript_normed'] + ', '
     text = text.strip()
-    if len(text) > 0:
-        if text[-1] == ',':
-            text = text[:-1]
+    text = text[:-1]
     return text
 
 def convert_speech_file_to_text(file_path: str):
@@ -86,17 +81,15 @@ def convert_speech_file_to_text(file_path: str):
 
 file_path = 'sound/upload_sound.mp3'
 if file_path is not None and os.path.exists(file_path) and os.path.isfile(file_path):
-    list_audio = slice_audio(file_path)
-    text = ''
-    for audio_path in list_audio:
-        text += convert_speech_file_to_text(audio_path) + ' '
-        os.remove(audio_path)
-    text = text.strip()
+    text = convert_speech_file_to_text(file_path)
     # print(type(text))
     # print(text)
     sys.stdout.write(json.dumps(text))
+    os.remove(file_path)
 else:
     pass
 
 if __name__ == '__main__':
+    # result = convert_speech_file_to_text('./Recording.wav')
+    # print(result)
     pass
