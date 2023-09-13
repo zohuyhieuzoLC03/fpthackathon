@@ -45,7 +45,7 @@ export const SidebarMenu = ({ isLoggedIn }) => {
           className={({isActive}) => isActive ? activeStyle : notActiveStyle}
         >
           {item.icons}
-          <span className='ml-4'>{item.text}</span>
+          <span className='ml-2'>{item.text}</span>
         </NavLink>
       ))}
     </div>

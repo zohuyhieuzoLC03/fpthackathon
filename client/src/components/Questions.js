@@ -1,9 +1,9 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Modal from "react-modal";
 import Form from "./Form";
 
-const Questions = ({isLoggedIn}) => {
+const Questions = ({ isLoggedIn }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
@@ -14,13 +14,20 @@ const Questions = ({isLoggedIn}) => {
   const [isSaving, setIsSaving] = useState(false);
   const [currentQuizzes, setCurrentQuizzes] = useState("");
   const [showModal, setShowModal] = useState(false);
+  const [selectedType, setSelectedType] = useState("multiple"); // Default selected type
 
   const handleSubmit = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:3001/api/quizzes', { text: text });
+      let apiEndpoint = 'http://localhost:3001/api/quizzes';
+
+      if (selectedType === "true/false") {
+        apiEndpoint = 'http://localhost:3001/api/quizzes_TF';
+      }
+
+      const response = await axios.post(apiEndpoint, { text: text });
       setQuizzes(response.data);
-      setCurrentQuizzes(response.data)
+      setCurrentQuizzes(response.data);
       setIsLoading(false);
     } catch (error) {
       console.error(error);
@@ -104,43 +111,57 @@ const Questions = ({isLoggedIn}) => {
             value={text}
             onChange={handleTextChange}
           />
-          <div className='flex gap-2'>
-            <button
-            className='px-4 py-2 bg-[#06325E] text-white rounded hover:bg-[#050828]'
-            onClick={handleSubmit}
-            disabled={isLoading}
+          <div className='flex justify-between'>
+            <div className='flex gap-2'>
+              <button
+              className='px-4 py-2 bg-[#06325E] text-white rounded hover:bg-[#050828]'
+              onClick={handleSubmit}
+              disabled={isLoading}
+              >
+              {isLoading ? 'Loading...' : 'Create Quiz'}
+              </button>
+              <button
+                className="px-4 py-2 bg-[#06325E] text-white rounded hover:bg-[#050828]"
+                onClick={handleFileUpload}
+                disabled={isUploading}
+              >
+                {isUploading ? 'Uploading...' : 'Upload File'}
+              </button>
+              {/* Thêm thẻ input type="file" ẩn đi, dùng để xử lý việc chọn file */}
+              <input
+                type="file"
+                accept=".png, .jpg, .jpeg, .mp3, .wav"
+                ref={fileInputRef}
+                onChange={handleSelectedFile}
+                style={{ display: 'none' }}
+              />
+              {isLoggedIn && (
+              <button 
+                className='px-4 py-2 w-32 bg-[#06325E] text-white rounded hover:bg-[#050828]' 
+                onClick={handleSave} 
+                disabled={isSaving} >
+                {isSaving ? 'Saving...' : 'Save'}
+              </button>
+            )}
+            </div>
+            <label htmlFor="viewChange" className="flex justify-end">
+            <select
+              id="viewChange"
+              value={selectedType}
+              onChange={(e) => setSelectedType(e.target.value)}
+              className="bg-white rounded-md border-2 px-4 py-2 right-0 top-0"
             >
-            {isLoading ? 'Loading...' : 'Create Quiz'}
-            </button>
-            <button
-              className="px-4 py-2 bg-[#06325E] text-white rounded hover:bg-[#050828]"
-              onClick={handleFileUpload}
-              disabled={isUploading}
-            >
-              {isUploading ? 'Uploading...' : 'Upload File'}
-            </button>
-            {/* Thêm thẻ input type="file" ẩn đi, dùng để xử lý việc chọn file */}
-            <input
-              type="file"
-              accept=".png, .jpg, .jpeg, .mp3, .wav"
-              ref={fileInputRef}
-              onChange={handleSelectedFile}
-              style={{ display: 'none' }}
-            />
-            {isLoggedIn && (
-            <button 
-              className='px-4 py-2 w-32 bg-[#06325E] text-white rounded hover:bg-[#050828]' 
-              onClick={handleSave} 
-              disabled={isSaving} >
-              {isSaving ? 'Saving...' : 'Save'}
-            </button>
-          )}
+              <option value="multiple">Multiple Choice</option>
+              <option value="true/false">True/False</option>
+            </select>
+          </label>
           </div>
+         
         </div>
       </div>
       {/* <h1 className='mt-10 text-center text-pink-500 font-bold text-[40px]'>Quiz</h1> */}
       {quizzes.length > 0 && (
-        <div className='text-white my-10 mx-20 rounded-lg px-20 py-10 shadow-xl flex bg-gradient-to-tr from-yellow-400 to-pink-500'>
+        <div className='text-white mb-20 mx-20 rounded-lg px-20 py-10 shadow-xl flex bg-gradient-to-tr from-yellow-400 to-pink-500'>
           {showScore ? (
             <div>
               <div className='flex text-2xl items-center'>
