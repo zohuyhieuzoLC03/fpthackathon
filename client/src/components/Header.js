@@ -23,7 +23,7 @@ const Header = ({ isLoggedIn }) => {
   return (
     <>
     <div className='flex'>
-      <div className="bg-white w-full h-16 shadow-xl fixed flex justify-between mb-10" >
+      <div className="bg-white w-full h-16 shadow-md fixed flex justify-between mb-10" >
         <div className='flex gap-1 w-full items-center px-4'>
           <div className='flex gap-2'>
             <span><FcMindMap size={26} /></span>

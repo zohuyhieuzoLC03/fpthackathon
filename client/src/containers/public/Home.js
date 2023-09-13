@@ -20,12 +20,12 @@ const Home = ({ isLoggedIn }) => {
     <div className='flex'>
         {isLoggedIn ? (
             <div className='flex'>
-            <div className='flex px-12 flex-col items-center gap-6'>
+            <div className='flex px-20 flex-col items-center gap-20'>
               <p style={{ wordWrap: 'break-word', textAlign: 'center' }} className='text-2xl pt-60'>
                 Mindmapify is a website that allows users to easily create mind map from their documents
               </p>
             </div>
-            <div className='mt-12 mr-8 mb-8'>
+            <div className='mt-12 mb-8'>
               <span className='font-semibold'>LeaderBoard</span>
               <LeaderBoard />
             </div>

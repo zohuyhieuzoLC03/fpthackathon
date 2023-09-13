@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { getDataFromFirestoreById } from "../../firebase";
+import { useNavigate } from 'react-router-dom';
 
 const OpenQuiz = () => {
     const ref = useRef();
@@ -9,6 +10,7 @@ const OpenQuiz = () => {
     const [score, setScore] = useState(0);
     const [quizzes, setQuizzes] = useState([]);
     const { itemId } = useParams();
+    const navigate = useNavigate();
     
     useEffect(() => {
         const fetchData = async () => {
@@ -39,7 +41,12 @@ const OpenQuiz = () => {
       };
 
     return (
-        <div>
+        <div className="flex flex-col mt-10 justify-center items-center ">
+          <div 
+            className='bg-[#06325E] hover:bg-[#050828] w-[60px] px-2 py-2 flex justify-center items-center rounded-lg cursor-pointer'
+            onClick={() => navigate("/private/library")}>
+                  <p className='text-white'>Back</p>
+            </div>
           {quizzes.length > 0 && (
             <div className='text-white my-10 mx-20 rounded-lg px-20 py-10 shadow-xl flex bg-gradient-to-tr from-yellow-400 to-pink-500'>
               {showScore ? (
