@@ -19,6 +19,37 @@ def get_sound_file_from_folder():
                 return os.path.join(folder_path, file)
     return None
 
+def slice_audio(file_path):
+    TIME_MAX = 19
+    audio_info = sf.info(file_path)
+
+    duration = audio_info.duration
+    audio, samplerate = sf.read(file_path)
+    # print(audio.shape)
+    start = 0
+    list_audio = []
+    count = 0
+    if duration > TIME_MAX:
+        while duration >= TIME_MAX:
+            sub_audio = audio[start: start + int(samplerate * TIME_MAX)]
+            sub_audio_path = file_path[:-4] + str(count) + file_path[-4:]
+            list_audio.append(sub_audio_path)
+            sf.write(sub_audio_path, sub_audio, samplerate)
+            start += int(samplerate * TIME_MAX)
+            duration -= TIME_MAX
+            count += 1
+        if duration >= 1:
+            # print(duration)
+            sub_audio = audio[start:]
+            # print(sub_audio.shape)
+            # print(count)
+            sub_audio_path = file_path[:-4] + str(count) + file_path[-4:]
+            list_audio.append(sub_audio_path)
+            sf.write(sub_audio_path, sub_audio, samplerate)
+        os.remove(file_path)
+    else:
+        list_audio.append(file_path)
+    return list_audio
 def convert_response_to_text(response):
     response = json.loads(response.text)
 
@@ -41,7 +72,11 @@ def convert_speech_file_to_text(file_path: str):
     s = requests.Session()
     files = {'file': open(file_path,'rb')}
     response = requests.post(url,files=files, headers=headers)
-    text = convert_response_to_text(response)
+    # print(response)
+    if response is not None:
+        text = convert_response_to_text(response)
+    else:
+        text = ''
     return text
 
 file_path = 'sound/upload_sound.mp3'
