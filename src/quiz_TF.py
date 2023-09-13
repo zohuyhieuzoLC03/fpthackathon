@@ -50,6 +50,9 @@ state = False
 stack_char = []
 list_quiz = []
 
+output_text_quiz = output_text_quiz.replace("true", "True")
+output_text_quiz = output_text_quiz.replace("false", "False")
+
 for c in output_text_quiz:
 
     if c == '{':
