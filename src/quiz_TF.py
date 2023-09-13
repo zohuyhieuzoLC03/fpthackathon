@@ -39,7 +39,7 @@ json_ex_quiz = """
 ];"""
 
 output_text_quiz = ""
-message_quiz = "hãy tạo ra 5 câu hỏi trắc nghiệm có dạng true-false bằng tiếng Việt có 2 đáp án với 1 một đáp án đúng và 1 đáp án sai, viết 5 câu hỏi đó thành 1 file với cấu trúc như: \n" + json_ex_quiz + "\n về những vấn đề liên quan đến đoạn văn sau: \n" + input
+message_quiz = "hãy tạo ra 5 câu hỏi trắc nghiệm có dạng true-false bằng tiếng Việt có 2 đáp án với 1 một đáp án đúng và 1 đáp án sai, viết 5 câu hỏi đó thành 1 file với cấu trúc như: \n" + json_ex_quiz + "\n các từ True, False trong phần Iscorrect phải viết hoa (Uppercase), về những vấn đề liên quan đến đoạn văn sau: \n" + input
 # conversation_id = "f7b6da04-a597-4582-8caf-83b622f4b475"
 conversation_id = claude_api.create_new_chat()['uuid']
 output_text_quiz += claude_api.send_message(message_quiz, conversation_id)
