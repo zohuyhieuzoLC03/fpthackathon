@@ -1,7 +1,7 @@
 import sys
 import json
 from claude_api import Client
-claude_api = Client('__cf_bm=zbj.steKHP7KcC8LPLd1YeNZwuf1GJ3Kwp3OsrGi5TI-1694158192-0-AX/72QkbvQmtrfngcfUYQRrdxDnzjsTKnFDVhn9mRpNJdVbaTMJLf0T9mPNRvFTCl4LPtsKPJeR4DPogdMoCSeI=; cf_clearance=AukbNCkoS2LCyUmkws9ejgFcl5K88GJel8MwpRmE8hw-1694158192-0-1-bae731ea.92aaac20.ede66e0a-0.2.1694158192; sessionKey=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')
+claude_api = Client('intercom-device-id-lupk8zyo=96958da8-27bd-4d51-af4b-ae39b543078d; sessionKey=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; __cf_bm=31E_OWYu1Rh4dLzL4knA1tTR6EGcrakxr.wK0VwSMQU-1694663777-0-AVRL2CLgep0u2Pgs9zlQHbAXOw2NdZpZi57Lq5JD4dD3YTO03EFqrEMX+ofMFAZJ6lEf+YV34iKxMlShj8tcCbg=; cf_clearance=yXbhqlrOWiydtTqfEDFWY2VJPuuioZVJngtzEPYzGHA-1694663779-0-1-9f252fb7.a5f70ed1.c8247057-0.2.1694663779')
 conversation_id = claude_api.create_new_chat()['uuid']
 text = sys.argv[1]
 
