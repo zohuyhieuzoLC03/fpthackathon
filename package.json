@@ -2,8 +2,8 @@
     "name": "iai-hackathon",
     "version": "0.1.0",
     "scripts": {
-        "start:client": "cd client && npm start",
-        "start:server": "cd src && node index.js -- --port 3001",
+        "start:client": "cd client && npm install && npm start",
+        "start:server": "cd src && npm install && node index.js -- --port 3001",
         "start": "concurrently \"npm run start:client\" \"npm run start:server\""
     },
     "dependencies": {
